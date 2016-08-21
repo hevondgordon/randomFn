@@ -3,7 +3,7 @@ STRINGS TO LOOK LIKE CURRENCY*/
 var curr="";
 function commas(x){
     if(x.length<=3){
-        return x+curr;
+        return "$"+x+curr+".00";
     }
     else{
         curr=curr+","+x.substring(x.length-3,x.length);
